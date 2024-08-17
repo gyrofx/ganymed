@@ -11,6 +11,9 @@
         "maintained node versions",
         "not dead"
     ],
+    "scripts": {
+        "start": "hugo server -s exampleSite --themesDir=../.. --disableFastRender"
+    },
     "dependencies": {
         "@tailwindcss/aspect-ratio": "^0.x",
         "@tailwindcss/forms": "^0.x",
