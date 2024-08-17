@@ -1,0 +1,24 @@
+theme = "ganymed"
+languageCode = "de-ch"
+baseurl = "https://www.ganymed-fohlen.org/"
+title = "Ganymed - Das Fohlenprojekt"
+
+author = "Felix Eichenberger"
+copyright = "Copyright© 2024, Ganymed - Das Fohlenprojekt, all rights reserved."
+
+
+[params]
+    name = "Ganymed - Das Fohlenprojekt"
+    description = "Ganymed - Das Fohlenprojekt"
+
+    github_user = "gyrofx"
+    github_repo = "https://github.com/gyrofx/ganymed"
+    github_banner = true
+
+    favicon = "favicon.ico"
+
+# syntax highlight settings
+[markup]
+  defaultMarkdownHandler = 'goldmark'
+  [markup.highlight]
+    style = "dracula"

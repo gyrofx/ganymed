@@ -1,0 +1,19 @@
+{{ define "main" }}
+<article class="justify-self-center mx-auto text-center prose dark:prose-invert prose-slate lg:prose-lg">
+    <h1 class="font-serif font-extralight text-5xl welcome-headline">{{ .Title }}</h1>
+    {{ .Content }}
+</article>
+
+
+{{ $newsPages := where site.RegularPages "Type" "news" }}
+{{ $newsPaginator := .Paginate $newsPages }}
+
+{{ range $newsPaginator.Pages }}
+<article
+    class="justify-self-center mx-auto mb-16 px-6 sm:px-4 md:px-0 prose dark:prose-invert prose-slate lg:prose-lg hover:prose-a:text-sky-500">
+    <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+    <p>PP</p>
+    {{ .Content }}
+</article>
+{{ end }}
+{{ end }}

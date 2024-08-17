@@ -1,0 +1,18 @@
+
+
+{{ define "main" }}
+<article>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-2">
+{{ range $page := .Pages }}
+    {{ $image := .Resources.GetMatch "*.jpg" }}
+    {{ with $image }}
+        {{ with .Fill "500x500" }}
+        <div>
+            <a  href="{{ $page.RelPermalink }}"><img class="h-auto max-w-full rounded-lg" src="{{ .RelPermalink }}" ></a>
+        </div>
+        {{ end }}
+    {{ end }}
+{{ end }}
+</div>
+</article>
+{{ end }}

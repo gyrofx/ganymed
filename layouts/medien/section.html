@@ -1,0 +1,29 @@
+{{ define "main" }}
+<article
+    class="justify-self-center mx-auto px-6 mb-16 sm:px-4 md:px-0 prose dark:prose-invert prose-slate lg:prose-lg hover:prose-a:text-sky-500">
+    <h1>{{ .Title }}</h1>
+
+    {{ .Content }}
+
+    {{ range $page := .Pages }}
+        <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+        <p>{{ $page.Params.publishedIn }} </p>
+
+        {{ $image := .Resources.GetMatch "*.jpg" }}
+        {{ with $image }}
+            {{ with .Fill "500x500" }}
+            <div>
+                <img class="h-auto max-w-full rounded-lg" src="{{ .RelPermalink }}" >
+            </div>
+            {{ end }}
+        {{ end }}
+
+        {{ $pdf := .Resources.GetMatch "*.pdf" }}
+        {{ with $pdf }}
+            <div>
+                <a  href="{{ .RelPermalink }}">Artikel lesen (pdf)</a>
+            </div>
+        {{ end }}
+    {{ end }}
+</article>
+{{ end }}
