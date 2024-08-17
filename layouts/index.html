@@ -1,18 +1,48 @@
 {{ define "main" }}
-<article class="justify-self-center mx-auto text-center prose dark:prose-invert prose-slate lg:prose-lg">
-    <h1 class="font-serif font-extralight text-5xl welcome-headline">{{ .Title }}</h1>
+<article class="">
+    {{ $image := resources.Get "images/ganymed.png" }}
+    {{ with $image }}
+        {{ with .Fill "400x400" }}
+            <img src="{{ $image.RelPermalink }}" class="uk-align-center" width="400px" height="400px">
+        {{ end }}
+    {{ end }}
+
     {{ .Content }}
+
+    <div class="flex content-center">
+        <a href="/verein" class="uk-button uk-button-primary  uk-align-center">Mehr über den Verein</a>
+    </div>
+
 </article>
+
+{{ $paths := slice "verein/idee/idea-1" "verein/idee/idea-2" "verein/idee/idea-3" }}
+{{ range $paths }}
+{{ with $.Site.GetPage . }}
+{{ $page := . }}
+{{ $image := .Resources.GetMatch "*.jpg" }}
+{{ with $image }}
+<a href="{{ $page.RelPermalink }}">
+    <div>
+        <div class="uk-inline">
+                <img src="{{ $image.RelPermalink }}" class="object-cover">
+                <div class="uk-overlay uk-overlay-default uk-position-bottom">
+                    <p>{{ $page.Title }}</p>
+                </div>
+            </div>
+        </div>
+    </a>
+{{ end }}
+{{ end }}
+{{ end }}
+
 
 
 {{ $newsPages := where site.RegularPages "Type" "news" }}
 {{ $newsPaginator := .Paginate $newsPages }}
 
 {{ range $newsPaginator.Pages }}
-<article
-    class="justify-self-center mx-auto mb-16 px-6 sm:px-4 md:px-0 prose dark:prose-invert prose-slate lg:prose-lg hover:prose-a:text-sky-500">
+<article>
     <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
-    <p>PP</p>
     {{ .Content }}
 </article>
 {{ end }}
