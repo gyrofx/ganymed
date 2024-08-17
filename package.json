@@ -12,7 +12,8 @@
         "not dead"
     ],
     "scripts": {
-        "start": "hugo server -s ganymedSite --themesDir=../.. --disableFastRender"
+        "start": "hugo serve --disableFastRender",
+        "build": "hugo"
     },
     "dependencies": {
         "@tailwindcss/aspect-ratio": "^0.x",
