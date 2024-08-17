@@ -959,6 +959,11 @@ ts-interface-checker@^0.1.9:
   resolved "https://registry.yarnpkg.com/ts-interface-checker/-/ts-interface-checker-0.1.13.tgz#784fd3d679722bc103b1b4b8030bcddb5db2a699"
   integrity sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==
 
+uikit@^3.21.9:
+  version "3.21.9"
+  resolved "https://registry.yarnpkg.com/uikit/-/uikit-3.21.9.tgz#c42b4cf326cb9fc39c6adaa8e9bcac3038e38520"
+  integrity sha512-P06c3Mq/lPjOt7w3KjgXNLLfzCh7q1UMHd1dzwaoQM9vzDe1UXVz/Hu4ppMrUGjDFIjgcIgGmEEpy4CCY7Mmrw==
+
 unicorn-magic@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/unicorn-magic/-/unicorn-magic-0.1.0.tgz#1bb9a51c823aaf9d73a8bfcd3d1a23dde94b0ce4"
