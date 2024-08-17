@@ -1,7 +1,7 @@
 ---
 author: Felix Eichenberger
 title: Neuigkeiten vom Ganymed-Fohlenprojekt
-date: 2019-05-13
+date: 2024-08-16
 params:
     publishedIn: Feuerthaler Anzeiger
 ---

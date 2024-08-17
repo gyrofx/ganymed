@@ -1,7 +1,7 @@
 ---
 author: Felix Eichenberger
 title: Tanja Scherrer-Barbirotta (Vize-Präsidentin, Beratung Pferde und Haltung)
-date: 2019-05-13
+date: 2024-08-16
 type: vorstand
 ---
 

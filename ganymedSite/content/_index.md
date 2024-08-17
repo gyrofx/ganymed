@@ -1,7 +1,7 @@
 ---
-author: Dirk Olbrich
+author: Felix Eichenberger
 title: Ganymed - Das Fohlenprojekt
-date: 2019-05-15
+date: 2024-08-16
 ---
 
 

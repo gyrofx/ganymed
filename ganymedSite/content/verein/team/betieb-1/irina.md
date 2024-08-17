@@ -1,7 +1,7 @@
 ---
 author: Felix Eichenberger
 title: Dr. phil. Irina Wenk (Geschäftsleitung, Initiantin)
-date: 2019-05-13
+date: 2024-08-16
 type: betrieb
 ---
 
