@@ -23,7 +23,10 @@
                 <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
                     <div class="w-10 rounded-full">
                         <a href="/">
-                            <img src="/images/ganymed-avatar.png" alt="" />
+                            {{ $image := resources.Get "images/ganymed-avatar.png" }}
+                            {{ with $image }}
+                                <img src="{{ $image.RelPermalink }}" class="uk-align-center" >
+                            {{ end }}
                         </a>
                     </div>
                 </div>
