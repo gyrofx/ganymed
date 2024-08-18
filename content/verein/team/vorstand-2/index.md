@@ -1,8 +1,13 @@
 ---
 author: Felix Eichenberger
-title: Tanja Scherrer-Barbirotta (Vize-Präsidentin, Beratung Pferde und Haltung)
+title: Tanja Scherrer-Barbirotta
 date: 2024-08-16
 type: vorstand
+params: 
+    function: Vize-Präsidentin, Beratung Pferde und Haltung
+    nameWithTitle: 
+    firstName: Tanja
+    lastName: Scherrer-Barbirotta
 ---
 
 > In der Zusammenarbeit mit den Pferden steht für mich eine partnerschaftliche Beziehung an erster Stelle

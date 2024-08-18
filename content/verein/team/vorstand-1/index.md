@@ -1,8 +1,13 @@
 ---
 author: Felix Eichenberger
-title: Dr. med. vet. Alexandra Meier (Präsidentin)
+title: Alexandra Meier
 date: 2024-08-16
 type: vorstand
+params: 
+    function: Präsidentin
+    nameWithTitle: Dr. med. vet.
+    firstName: Alexandra
+    lastName: Meier
 ---
 
 > Pferde faszinieren mich seit meiner Kindheit

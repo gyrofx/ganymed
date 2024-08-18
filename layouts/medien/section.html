@@ -1,29 +1,38 @@
 {{ define "main" }}
-<article
-    class="justify-self-center mx-auto px-6 mb-16 sm:px-4 md:px-0 prose dark:prose-invert prose-slate lg:prose-lg hover:prose-a:text-sky-500">
+<article class="prose lg:prose-xl">
+
     <h1>{{ .Title }}</h1>
 
     {{ .Content }}
-
+    <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
     {{ range $page := .Pages }}
-        <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-        <p>{{ $page.Params.publishedIn }} </p>
 
-        {{ $image := .Resources.GetMatch "*.jpg" }}
-        {{ with $image }}
-            {{ with .Fill "500x500" }}
-            <div>
-                <img class="h-auto max-w-full rounded-lg" src="{{ .RelPermalink }}" >
-            </div>
+        <div class="card bg-base-100 shadow-xl">
+            {{ $image := .Resources.GetMatch "*.jpg" }}
+            {{ with $image }}
+                {{ with .Resize "600x" }}
+                <div>
+                    <img class="not-prose h-auto max-w-full rounded-lg" src="{{ .RelPermalink }}" >
+                </div>
+                {{ end }}
             {{ end }}
-        {{ end }}
+        <div class="card-body">
+            <h2 class="card-title">{{ $page.Title }}</h2>
+            <p>{{ $page.Params.publishedIn }} </p>
+            <div class="card-actions justify-end">
 
-        {{ $pdf := .Resources.GetMatch "*.pdf" }}
-        {{ with $pdf }}
-            <div>
-                <a  href="{{ .RelPermalink }}">Artikel lesen (pdf)</a>
+            {{ $pdf := .Resources.GetMatch "*.pdf" }}
+                {{ with $pdf }}
+                    
+                    <a class="btn btn-secondary" href="{{ .RelPermalink }}">Artikel lesen (pdf)</a>
+                    
+                {{ end }}
             </div>
-        {{ end }}
+        </div>
+        </div>
+
+
     {{ end }}
+    </div>
 </article>
 {{ end }}

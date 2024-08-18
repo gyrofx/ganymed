@@ -1,8 +1,13 @@
 ---
 author: Felix Eichenberger
-title: Daniela Kronenburg (Kassiererin)
+title: Daniela Kronenburg
 date: 2024-08-16
 type: vorstand
+params: 
+    function: Kassiererin
+    nameWithTitle: 
+    firstName: Daniela
+    lastName: Kronenburg
 ---
 
 

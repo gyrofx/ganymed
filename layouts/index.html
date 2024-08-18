@@ -1,17 +1,24 @@
 {{ define "main" }}
-<article class="">
+<article>
+
+<div class="flex justify-center items-center">
     {{ $image := resources.Get "images/ganymed.png" }}
     {{ with $image }}
         {{ with .Fill "400x400" }}
             <img src="{{ $image.RelPermalink }}" class="uk-align-center" width="400px" height="400px">
         {{ end }}
     {{ end }}
+</div>
 
-    {{ .Content }}
+<div class="flex flex-col">
+    <div>
+        {{ .Content }}
+    </div>
 
     <div class="flex content-center">
         <a href="/verein" class="uk-button uk-button-primary  uk-align-center">Mehr über den Verein</a>
     </div>
+</div>  
 
 </article>
 

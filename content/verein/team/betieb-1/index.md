@@ -1,8 +1,13 @@
 ---
 author: Felix Eichenberger
-title: Dr. phil. Irina Wenk (Geschäftsleitung, Initiantin)
+title: Irina Wenk
 date: 2024-08-16
 type: betrieb
+params: 
+    function: Geschäftsleitung, Initiantin
+    nameWithTitle: Dr. phil. Irina Wenk
+    firstName: Irina
+    lastName: Wenk
 ---
 
 

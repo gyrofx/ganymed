@@ -1,8 +1,10 @@
 ---
 author: Felix Eichenberger
-title: Betriebsleitung und Vorstand
+title: Team
 date: 2024-08-16
 type: team
+params:
+    description: Die Menschen hinter Ganymed
 ---
 
 <!-- # Unsere Betriebsleitung -->

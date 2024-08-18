@@ -1,6 +1,6 @@
 ---
 author: Felix Eichenberger
-title: Neuigkeiten vom Ganymed-Fohlenprojekt
+title: Ein Hof für Pferde, die keiner will
 date: 2024-08-16
 params:
     publishedIn: Schaffhauser Nachrichten
