@@ -11,7 +11,7 @@ params:
 ---
 
 
-> Letzten Endes sind es aber immer die Pferde, die uns den Weg vorgeben. AAAAAAAAAAAa
+> Letzten Endes sind es aber immer die Pferde, die uns den Weg vorgeben
 
 Im Jahre 2016 habe ich das Fohlenprojekt ins Leben gerufen. Sowohl in meiner wissenschaftlichen Arbeit wie auch im Umgang mit Pferden beschäftige ich mich seit Langem mit den Fragen, wie Tiere und Menschen als soziale Wesen eine Gemeinschaft bilden können, was die Essenz eines gleichberechtigten und harmonischen gegenseitigen Umgangs ist und unter welchen Bedingungen sich Mensch und Pferd ideal entfalten. Ich verstehe das Sein mit Pferden als ein lebenslanges Lernen, sowohl was die Pferde als auch uns selbst betrifft, immer mit dem Ziel, noch feiner, noch verständlicher, noch gemeinsamer zu werden.
 Ich habe Ethnologie, Politikwissenschaft und Völkerrecht studiert und arbeite als wissenschaftliche Mitarbeiterin an der Universität Zürich. Zwischen 2018 und 2020 erforsche ich im Rahmen eines EU-finanzierten Forschungsprojekts die Produktion, den Handel und die Rettung sogenannter „Schlachtfohlen“.

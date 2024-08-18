@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang='{{ .Site.LanguageCode }}' data-theme="bumblebee">
+<html lang='{{ .Site.LanguageCode }}' data-theme="ganymed">
 {{ partial "head.html" . }}
 
 <body class="">
     {{- partial "dev/dev-tools.html" . -}}
     {{- partial "header.html" . -}}
-    <main class="md:container md:mx-auto mt-[120px] mx-5">
+    <main class="md:container md:mx-auto mt-[120px] mx-5 prose prose-lg">
         {{- block "main" . }}{{- end }}
     </main>
     {{- partial "footer.html" . -}}

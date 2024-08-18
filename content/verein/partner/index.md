@@ -6,6 +6,3 @@ type: partner
 params:
     description: Die Partner von Ganymed
 --- 
-
-
-Unsere Partner 

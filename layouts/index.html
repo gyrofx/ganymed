@@ -2,12 +2,14 @@
 <article>
 
 <div class="flex justify-center items-center">
+    
     {{ $image := resources.Get "images/ganymed.png" }}
     {{ with $image }}
         {{ with .Fill "400x400" }}
-            <img src="{{ $image.RelPermalink }}" class="uk-align-center" width="400px" height="400px">
+                <img src="{{ $image.RelPermalink }}" class="uk-align-center" width="400px" height="400px">
         {{ end }}
     {{ end }}
+ 
 </div>
 
 <div class="flex flex-col">
@@ -15,29 +17,33 @@
         {{ .Content }}
     </div>
 
-    <div class="flex content-center">
-        <a href="/verein" class="uk-button uk-button-primary  uk-align-center">Mehr über den Verein</a>
+    <div class="flex justify-center">
+        <a href="/verein" class="btn btn-primary">Mehr über den Verein</a>
     </div>
 </div>  
 
 </article>
 
+<div class="mt-10 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
 {{ $paths := slice "verein/idee/idea-1" "verein/idee/idea-2" "verein/idee/idea-3" }}
 {{ range $paths }}
 {{ with $.Site.GetPage . }}
 {{ $page := . }}
 {{ $image := .Resources.GetMatch "*.jpg" }}
 {{ with $image }}
-<a href="{{ $page.RelPermalink }}">
-    <div>
-        <div class="uk-inline">
-                <img src="{{ $image.RelPermalink }}" class="object-cover">
-                <div class="uk-overlay uk-overlay-default uk-position-bottom">
-                    <p>{{ $page.Title }}</p>
-                </div>
-            </div>
+    <div class="card bg-base-500 shadow-xl bg-amber-200">
+        {{ with .Fill "600x352" }}
+        <div>
+            <img class="not-prose h-auto max-w-full rounded-lg" src="{{ .RelPermalink }}" >
         </div>
-    </a>
+        {{ end }}
+        <div class="card-body">
+            <h2 class="card-title">{{ $page.Title }}</h2>
+            <div class="card-actions justify-end">
+                <a class="btn btn-secondary" href="/verein/idee">Mehr</a>
+            </div>
+        </div>  
+    </div>   
 {{ end }}
 {{ end }}
 {{ end }}
