@@ -1,4 +1,4 @@
-<header class="">
+<header class="fixed top-0 w-full ">
     {{/* CSS functionality for menu toggle */}}
     <style type="text/css">
         input#nav-toggle:checked~label#show-button {
@@ -14,35 +14,41 @@
         }
     </style>
 
-<div class="navbar bg-secondary text-primary-content">
-    <div class="navbar-start">
-    <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
-        <div class="w-10 rounded-full">
-            <img src="/images/ganymed-avatar.png" alt="" />
-        </div>
-      </div>
-    </div>    
-    
-    <div class="navbar-end lg:flex">
-        <ul class="menu menu-horizontal px-1">
-            <li class="uk-active"><a href="/verein">Verein</a></li>
-            <li><a href="/pferde">Pferde</a></li>
-        </ul>
-      </div>
-  </div>
 
-  <div class="breadcrumbs text-sm">
-    <ul>
-        <li><a href="/">Home</a></li>
-        {{ $len := len .Ancestors.Reverse }}
-        {{ range $index, $element := .Ancestors.Reverse }}
-        {{ if gt $index 0 }}
-        <li><a href="{{ $element.RelPermalink }}">{{ $element.Title }}</a></li>
-        {{ end }}
-        {{ end }}
-        {{ if gt $len 0 }}
-        <li><span>{{ .Page.Title }}</span></li>
-        {{ end }}
-    </ul>
-  </div>
+
+<!-- flex-no-wrap fixed top-0 z-10 flex w-full items-center justify-between bg-[#FBFBFB] py-2 shadow-md shadow-black/5 dark:bg-neutral-600 dark:shadow-black/10 lg:flex-wrap lg:justify-start lg:py-4 -->
+    <div class="md:container md:mx-auto bg-secondary shadow-md shadow-black/10">
+        <div class="navbar text-primary-content z-10 ">
+            <div class="navbar-start">
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                    <div class="w-10 rounded-full">
+                        <img src="/images/ganymed-avatar.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        
+            
+            <div class="navbar-end lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li class="uk-active"><a href="/verein">Verein</a></li>
+                    <li><a href="/pferde">Pferde</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="breadcrumbs text-sm ml-4 bg-secondary-100">
+            <ul>
+                <li><a href="/">Home</a></li>
+                {{ $len := len .Ancestors.Reverse }}
+                {{ range $index, $element := .Ancestors.Reverse }}
+                {{ if gt $index 0 }}
+                <li><a href="{{ $element.RelPermalink }}">{{ $element.Title }}</a></li>
+                {{ end }}
+                {{ end }}
+                {{ if gt $len 0 }}
+                <li><span>{{ .Page.Title }}</span></li>
+                {{ end }}
+            </ul>
+        </div>
+    </div>
 </header>

@@ -2,10 +2,10 @@
 <html lang='{{ .Site.LanguageCode }}' data-theme="bumblebee">
 {{ partial "head.html" . }}
 
-<body class="md:container md:mx-auto">
+<body class="">
     {{- partial "dev/dev-tools.html" . -}}
     {{- partial "header.html" . -}}
-    <main class="">
+    <main class="md:container md:mx-auto mt-[120px]">
         {{- block "main" . }}{{- end }}
     </main>
     {{- partial "footer.html" . -}}
