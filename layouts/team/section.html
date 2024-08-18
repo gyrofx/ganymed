@@ -6,7 +6,7 @@
     {{ range where .Data.Pages "Type" "betrieb" }}
 
   
-          <div class="card bg-base-100 shadow-xl">
+          <div class="card bg-base-500 shadow-xl bg-amber-200">
             {{ $image := .Resources.GetMatch "*.jpg" }}
             {{ with $image }}
               {{ with .Fill "600x352" }}
@@ -34,7 +34,7 @@
     <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
       {{ range where .Data.Pages "Type" "vorstand" }}
    
-    <div class="card bg-base-100 shadow-xl">
+    <div class="card shadow-xl  bg-amber-200">
       {{ $image := .Resources.GetMatch "*.jpg" }}
       {{ with $image }}
         {{ with .Fill "600x352" }}
