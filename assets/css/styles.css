@@ -13,3 +13,12 @@
         @apply text-sky-600;
     }
 }
+
+:root .prose{
+    --tw-prose-body: #854d0e;
+    --tw-prose-headings: #57340b;
+}
+
+.ganymed-bg-card {
+    background-color: #eed6b1;
+}

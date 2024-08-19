@@ -18,7 +18,7 @@
     </div>
 
     <div class="flex justify-center">
-        <a href="/verein" class="btn btn-primary">Mehr über den Verein</a>
+        <a href="/verein" class="btn btn-secondary">Mehr über den Verein</a>
     </div>
 </div>  
 
@@ -31,7 +31,7 @@
 {{ $page := . }}
 {{ $image := .Resources.GetMatch "*.jpg" }}
 {{ with $image }}
-    <div class="card bg-base-500 shadow-xl bg-amber-200">
+    <div class="card shadow-xl ganymed-bg-card">
         {{ with .Fill "600x352" }}
         <div>
             <img class="not-prose h-auto max-w-full rounded-lg" src="{{ .RelPermalink }}" >
