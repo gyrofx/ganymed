@@ -47,16 +47,25 @@
 {{ end }}
 {{ end }}
 {{ end }}
-
+</div>
 
 
 {{ $newsPages := where site.RegularPages "Type" "news" }}
 {{ $newsPaginator := .Paginate $newsPages }}
 
 {{ range $newsPaginator.Pages }}
+<hr />
 <article>
-    <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+    <h1>{{ .Title }}</h1>
     {{ .Content }}
+
+    {{ $image := .Resources.GetMatch "*.jpg" }}
+    {{ with $image }}
+            <div>
+                <img class="not-prose h-auto max-w-full rounded-lg" src="{{ .RelPermalink }}" >
+            </div>
+    {{ end }}
 </article>
+
 {{ end }}
 {{ end }}
