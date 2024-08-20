@@ -5,7 +5,7 @@ date: 2024-08-16
 type: vorstand
 params: 
     function: Vize-Präsidentin, Beratung Pferde und Haltung
-    nameWithTitle: 
+    education: 
     firstName: Tanja
     lastName: Scherrer-Barbirotta
 ---

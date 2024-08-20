@@ -5,7 +5,7 @@ date: 2024-08-16
 type: vorstand
 params: 
     function: Kassiererin
-    nameWithTitle: 
+    education: 
     firstName: Daniela
     lastName: Kronenburg
 ---

@@ -5,7 +5,7 @@ date: 2024-08-16
 type: betrieb
 params: 
     function: Geschäftsleitung, Initiantin
-    nameWithTitle: Dr. phil. Irina Wenk
+    education: Dr. phil.
     firstName: Irina
     lastName: Wenk
 ---

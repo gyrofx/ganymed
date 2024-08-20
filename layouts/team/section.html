@@ -1,7 +1,7 @@
 {{ define "main" }}
 <article class="prose lg:prose-xl">
     
-    <h2>Betrieb</h2>
+    <h1>Betrieb</h1>
     <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
     {{ range where .Data.Pages "Type" "betrieb" }}
 
@@ -27,7 +27,7 @@
         {{ end }}
       </div>
 
-    <h2>Vorstand</h2>
+    <h1 class="mt-6">Vorstand</h1>
     <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
       {{ range where .Data.Pages "Type" "vorstand" }}
    

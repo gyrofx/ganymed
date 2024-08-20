@@ -1,6 +1,9 @@
 {{ define "main" }}
 <article>
-    <h1>{{ .Title }}</h1>
+    <div class="flex flex-row">
+        <h1>{{ .Title }}</h1>
+        <h4>{{ .Params.title }}</h4>
+    </div>
     {{ .Content }}
     <div class="grid grid-cols-2 md:grid-cols-3 gap-2">
     <h1>TEAM</h1>    

@@ -5,7 +5,7 @@ date: 2024-08-16
 type: vorstand
 params: 
     function: Präsidentin
-    nameWithTitle: Dr. med. vet.
+    education: Dr. med. vet.
     firstName: Alexandra
     lastName: Meier
 ---
