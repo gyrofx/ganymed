@@ -1,0 +1,24 @@
+{{ define "main" }}
+<article class="prose lg:prose-xl">
+    
+    <h1>{{ .Title }}</h1>
+    <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    {{ range .Pages }}  
+          <div class="card shadow-xl ganymed-bg-card">
+            {{ $image := .Resources.GetMatch "*.jpg" }}
+            {{ with $image }}
+              {{ with .Fill "600x352" }}
+              <div>
+                  <img class="not-prose h-auto max-w-full rounded-lg" src="{{ .RelPermalink }}" >
+              </div>
+              {{ end }}
+            {{ end }}
+            <div class="card-body">
+                <h2 class="card-title">{{ .Title }}</h2>
+                <p>{{ .Content }} </p>
+            </div>
+        </div>
+        {{ end }}
+      </div>
+</article>
+{{ end }}
