@@ -7,12 +7,10 @@
 
 {{ .Content }}
 
-<div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+<div class="grid sm:grid-cols-2 md:grid-cols-3  gap-4">
     {{ range .Resources.ByType "image" }}
         {{ with .Resize "200x" }}
-        <div class="relative">
-            <img class="h-auto max-w-full rounded-lg" src="{{ .RelPermalink }}" >
-        </div>
+            <img class="h-auto max-w-full" src="{{ .RelPermalink }}" >
         {{ end }}
     {{ end }}
 </div>

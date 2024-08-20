@@ -10,7 +10,7 @@ module.exports = {
       typography: ({ theme }) => ({
         DEFAULT: {
           css: {
-            maxWidth: "100%",
+            maxWidth: "1200px",
           },
         },
         light: {

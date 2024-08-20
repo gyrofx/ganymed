@@ -25,7 +25,7 @@
 </article>
 
 <div class="mt-10 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-{{ $paths := slice "verein/idee/idea-1" "verein/idee/idea-2" "verein/idee/idea-3" }}
+{{ $paths := slice "verein/ziele/ziel-1" "verein/ziele/ziel-2" "verein/ziele/ziel-3" }}
 {{ range $paths }}
 {{ with $.Site.GetPage . }}
 {{ $page := . }}
@@ -40,7 +40,7 @@
         <div class="card-body">
             <h2 class="card-title">{{ $page.Title }}</h2>
             <div class="card-actions justify-end">
-                <a class="btn btn-secondary" href="/verein/idee">Mehr</a>
+                <a class="btn btn-secondary" href="/verein/ziele">Mehr</a>
             </div>
         </div>  
     </div>   

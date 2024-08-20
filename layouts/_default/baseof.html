@@ -5,8 +5,10 @@
 <body class="">
     {{- partial "dev/dev-tools.html" . -}}
     {{- partial "header.html" . -}}
-    <main class="md:container md:mx-auto mt-[120px] mx-5 prose prose-lg">
-        {{- block "main" . }}{{- end }}
+    <main class="md:container mx-auto mt-[120px] flex justify-center">
+        <div class="prose prose-lg mx-5 ">
+            {{- block "main" . }}{{- end }}
+        </div>
     </main>
     {{- partial "footer.html" . -}}
 </body>
