@@ -4,6 +4,7 @@ title: Rapunzel
 date: 2024-08-16
 type: pferde
 params:
+    BeiGanymedSeit: 2024
     Rasse: Tinkerpony
     Jahrgang: 2016
     Geschlecht: Stute

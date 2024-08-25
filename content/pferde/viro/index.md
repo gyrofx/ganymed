@@ -4,6 +4,7 @@ title: Viro
 date: 2024-08-16
 type: pferde
 params:
+    BeiGanymedSeit: 2024
     Rasse: Irisches Tinker Pony
     Jahrgang: 2004
     Geschlecht: Wallach

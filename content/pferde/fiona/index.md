@@ -4,6 +4,7 @@ title: Fiona
 date: 2024-08-16
 type: pferde
 params:
+    BeiGanymedSeit: 2019
     Rasse: Noriker
     Jahrgang: 2019 - Juni 2021
     Geschlecht: Stute

@@ -4,6 +4,7 @@ title: Akay
 date: 2024-08-16
 type: pferde
 params:
+    BeiGanymedSeit: 2012
     Rasse: PRE
     Jahrgang: 2010
     Geschlecht: Wallach

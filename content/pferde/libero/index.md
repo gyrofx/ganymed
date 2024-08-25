@@ -4,6 +4,7 @@ title: Libero
 date: 2024-08-16
 type: pferde
 params:
+    BeiGanymedSeit: 2024
     Rasse: Apaloosa/Lipizzaner Mix
     Jahrgang: 2003
     Geschlecht: Wallach

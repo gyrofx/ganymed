@@ -4,6 +4,7 @@ title: Davinci
 date: 2024-08-16
 type: pferde
 params:
+    BeiGanymedSeit: 2024
     Rasse: Irischer Traber
     Jahrgang: 2020
     Geschlecht: Hengst

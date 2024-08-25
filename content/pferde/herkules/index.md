@@ -4,6 +4,7 @@ title: Herkules
 date: 2024-08-16
 type: pferde
 params:
+    BeiGanymedSeit: 2024
     Rasse: Noriker
     Jahrgang: 2017
     Geschlecht: Wallach

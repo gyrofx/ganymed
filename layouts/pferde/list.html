@@ -8,29 +8,34 @@
 {{ .Content }}
 
 <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+
+    {{ range .Pages.GroupByParam "BeiGanymedSeit" "asc" }}
+    <h2>{{ .Key }}</h2>
+
     {{ range $page := .Pages }}
-    <div>
-        <a  href="{{ $page.RelPermalink }}">
-            <div class="relative">
-    {{ $image := .Resources.GetMatch "*.jpg" }}
-    {{ if $image }}
-        {{ with $image }}
-        {{ with .Fill "500x500" }}
-                <img class="h-auto max-w-full rounded-lg" src="{{ .RelPermalink }}" >
+        <div>
+            <a  href="{{ $page.RelPermalink }}">
+                <div class="relative">
+        {{ $image := .Resources.GetMatch "*.jpg" }}
+        {{ if $image }}
+            {{ with $image }}
+            {{ with .Fill "500x500" }}
+                    <img class="h-auto max-w-full rounded-lg" src="{{ .RelPermalink }}" >
+            {{ end }}
+            {{ end }}
+        {{ else }}
+            {{ with resources.Get "images/horse-placeholder.svg" }}
+                    <img class="h-auto max-w-full rounded-lg" src="{{ .RelPermalink }}" >
+            {{ end }}    
         {{ end }}
-        {{ end }}
-    {{ else }}
-        {{ with resources.Get "images/horse-placeholder.svg" }}
-                <img class="h-auto max-w-full rounded-lg" src="{{ .RelPermalink }}" >
-        {{ end }}    
-    {{ end }}
-                <div class="absolute bottom-10 w-full flex items-center justify-center bg-primary opacity-70">
-                    <h2 class="m-2 text-white text-3xl font-bold">{{ $page.Title }}</h2>
+                    <div class="absolute bottom-10 w-full flex items-center justify-center bg-primary opacity-70">
+                        <h2 class="m-2 text-white text-3xl font-bold">{{ $page.Title }}</h2>
+                    </div>
                 </div>
-            </div>
-        </a>
-    </div>
-{{ end }}
+            </a>
+        </div>
+        {{ end }}
+    {{ end }}
 </div>
 </article>
 {{ end }}

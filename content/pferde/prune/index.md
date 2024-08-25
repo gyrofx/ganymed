@@ -4,6 +4,7 @@ title: Prune
 date: 2024-08-16
 type: pferde
 params:
+    BeiGanymedSeit: 2017
     Rasse: Freiberger
     Jahrgang: 2017
     Geschlecht: Stute

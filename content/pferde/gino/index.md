@@ -4,6 +4,8 @@ title: Gino
 date: 2024-08-16
 type: pferde
 params:
+    BeiGanymedSeit: 2016
+    Vermittelt: 2021
     Rasse: Noriker
     Jahrgang: 2016
     Geschlecht: Wallach

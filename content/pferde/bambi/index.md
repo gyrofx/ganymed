@@ -4,6 +4,7 @@ title: Bambi
 date: 2024-08-16
 type: pferde
 params:
+    BeiGanymedSeit: 2020
     Rasse: British Spotted Pony
     Jahrgang: 2014
     Geschlecht: Wallach
