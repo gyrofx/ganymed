@@ -1,6 +1,6 @@
 ---
 author: Felix Eichenberger
-title: Gregor
+title: Harmonie
 date: 2024-08-16
 type: pferde
 params:
